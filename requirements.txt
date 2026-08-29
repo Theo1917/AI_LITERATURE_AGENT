@@ -1,0 +1,11 @@
+langchain
+langchain-community
+langchain-openai
+langchain-anthropic
+python-dotenv
+pydantic
+
+pypdf
+pymupdf
+
+langchain-text-splitters
