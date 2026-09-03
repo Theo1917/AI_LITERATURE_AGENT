@@ -238,7 +238,7 @@ Provide the complete structured research analysis.
 
 chain = prompt | llm | parser
 
-st.title("📄 Research Paper Analyzer")
+st.title(" Research Paper Analyzer")
 
 st.write(
     "Upload a research paper PDF and get a structured "
@@ -267,7 +267,7 @@ if uploaded_file is not None:
         f"Uploaded: {uploaded_file.name}"
     )
 
-    if st.button("🔍 Analyze Research Paper"):
+    if st.button(" Analyze Research Paper"):
 
         with st.spinner(
             "Extracting and analyzing the research paper..."
@@ -320,13 +320,13 @@ if uploaded_file is not None:
                 # DISPLAY RESULTS
                 # --------------------------------------------
 
-                st.header("📋 Research Paper Analysis")
+                st.header(" Research Paper Analysis")
 
                 # ------------------------------------------------
                 # Paper Information
                 # ------------------------------------------------
 
-                st.subheader("📄 Paper Information")
+                st.subheader(" Paper Information")
 
                 st.write(
                     f"**Title:** {result.title}"
@@ -355,7 +355,7 @@ if uploaded_file is not None:
                 # Research Problem
                 # ------------------------------------------------
 
-                st.subheader("🎯 Research Problem")
+                st.subheader(" Research Problem")
 
                 st.write(
                     result.research_problem
@@ -365,7 +365,7 @@ if uploaded_file is not None:
                 # Research Question
                 # ------------------------------------------------
 
-                st.subheader("❓ Research Question")
+                st.subheader(" Research Question")
 
                 st.write(
                     result.research_questions
@@ -376,7 +376,7 @@ if uploaded_file is not None:
                 # Summary
                 # ------------------------------------------------
 
-                st.subheader("📝 Summary")
+                st.subheader(" Summary")
 
                 st.write(
                     result.summary
@@ -386,7 +386,7 @@ if uploaded_file is not None:
                 # Methodology
                 # ------------------------------------------------
 
-                st.subheader("🔬 Methodology")
+                st.subheader(" Methodology")
 
                 st.write(
                     result.methodology
@@ -396,7 +396,7 @@ if uploaded_file is not None:
                 # Datasets
                 # ------------------------------------------------
 
-                st.subheader("📊 Datasets")
+                st.subheader(" Datasets")
 
                 if result.datasets:
 
@@ -416,7 +416,7 @@ if uploaded_file is not None:
                 # Key Findings
                 # ------------------------------------------------
 
-                st.subheader("💡 Key Findings")
+                st.subheader(" Key Findings")
 
                 for finding in result.key_findings:
 
@@ -428,7 +428,7 @@ if uploaded_file is not None:
                 # Contributions
                 # ------------------------------------------------
 
-                st.subheader("🏆 Contributions")
+                st.subheader("Contributions")
 
                 for contribution in result.contributions:
 
@@ -440,7 +440,7 @@ if uploaded_file is not None:
                 # Limitations
                 # ------------------------------------------------
 
-                st.subheader("⚠️ Limitations")
+                st.subheader("Limitations")
 
                 for limitation in result.limitations:
 
@@ -452,7 +452,7 @@ if uploaded_file is not None:
                 # Strengths
                 # ------------------------------------------------
 
-                st.subheader("💪 Strengths")
+                st.subheader(" Strengths")
 
                 for strength in result.strengths:
 
@@ -464,7 +464,7 @@ if uploaded_file is not None:
                 # Weaknesses
                 # ------------------------------------------------
 
-                st.subheader("🔎 Weaknesses")
+                st.subheader(" Weaknesses")
 
                 for weakness in result.weaknesses:
 
@@ -477,7 +477,7 @@ if uploaded_file is not None:
                 # ------------------------------------------------
 
                 st.subheader(
-                    "🔴 Research Gaps Explicitly Mentioned"
+                    " Research Gaps Explicitly Mentioned"
                 )
 
                 if result.explicit_research_gaps:
@@ -499,7 +499,7 @@ if uploaded_file is not None:
                 # ------------------------------------------------
 
                 st.subheader(
-                    "🟠 Research Gaps Inferred by Analysis"
+                    " Research Gaps Inferred by Analysis"
                 )
 
                 if result.inferred_research_gaps:
@@ -520,7 +520,7 @@ if uploaded_file is not None:
                 # Future Work
                 # ------------------------------------------------
 
-                st.subheader("🚀 Future Work")
+                st.subheader(" Future Work")
 
                 if result.future_work:
 
@@ -540,7 +540,7 @@ if uploaded_file is not None:
                 # Conclusion
                 # ------------------------------------------------
 
-                st.subheader("🎓 Conclusion")
+                st.subheader(" Conclusion")
 
                 st.write(
                     result.conclusion
