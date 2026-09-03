@@ -6,7 +6,7 @@ LIT Agent takes a research paper PDF and turns it into a simple, structured anal
 
 Just:
 
- Upload → Analyze → Understand**
+ Upload → Analyze → Understand
 
 ### What it finds
 
